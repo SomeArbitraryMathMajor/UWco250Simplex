@@ -48,7 +48,7 @@ LP <- form.LP(b=b, A=A, v=v)
 formulating an LP with basis $B=\\{1,4\\}$ and initial $z$ value of $3$:
 
 $$\begin{aligned}
-    &\text{max}\qquad\begin{pmatrix}0 & -1 & -2 & 0 & -3\end{pmatrix}x\\
+    &\text{max}\qquad 3 + \begin{pmatrix}0 & -1 & -2 & 0 & -3\end{pmatrix}x\\
     \text{s.t.}\qquad&\\
     &\begin{pmatrix}
     1 & -2 & 1 & 0 & 2\\
@@ -57,9 +57,8 @@ $$\begin{aligned}
     2\\
     4
 \end{pmatrix}\\
-&\quad x\geq0
+&\quad x \geq 0
 \end{aligned}$$
-
 
 ```
 B <- c(1,4)
@@ -72,7 +71,21 @@ v <- c(0,-1,-2,0,-3)
 z <- 3
 LP <- form.LP(B, b, A, v, z)
 ```
-optimal solution exists for raw Simplex
+optimal solution exists for raw Simplex with given basis $B=\\{\3,5\}$:
+
+$$\begin{aligned}
+    &\text{max}\qquad \begin{pmatrix}-1 & 3 & -5 & 9 & 3\end{pmatrix}x\\
+    \text{s.t.}\qquad&\\
+    &\begin{pmatrix}
+    4 & 1& 3 & -1 & -2\\
+    3 & 1 & 2 & 0 & -1
+\end{pmatrix}x=\begin{pmatrix}
+    2\\
+    3
+\end{pmatrix}\\
+&\quad x \geq 0
+\end{aligned}$$
+
 ```
 B <- c(3,5)
 A <- rbind(
@@ -85,6 +98,7 @@ LP <- form.LP(B, b, A, v)
 simplex(LP)
 ```
 unbounded LP under raw Simplex
+
 ```
 B <- c(2,3,5,6)
 A <- rbind(
