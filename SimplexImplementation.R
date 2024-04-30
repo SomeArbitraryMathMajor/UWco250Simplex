@@ -2,6 +2,7 @@
 # SIMPLEX ALGORITHM IMPLEMENTATION #
 ####################################
 
+# library for formatting purposes
 require(MASS)
 
 ##########################
@@ -53,7 +54,7 @@ canonical <- function(LP) {
 ##########################
 simplex <- function(LP) {
   ## returns either
-  ##    (1) list of iter count, solved status, optimal solution, last LP; or
+  ##    (1) list of iter count, solved status, optimal solution, last calculated LP; or
   ##    (2) list of iter count, solved status, certificate of unboundedness
   ## use Bland's rule
   i = 0 # counter for iteration
@@ -188,6 +189,3 @@ dual <- function(LP, opt=1) {
 }
 
 # dual(LP, opt=0) # run an instance of dual on min LP
-
-
-
