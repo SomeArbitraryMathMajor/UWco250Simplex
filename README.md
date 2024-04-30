@@ -14,7 +14,10 @@ This is only for educational purposes, all credits go towards the authors of the
 
 ## Example Usage:
 formulating an LP simple case
-$$\max\{z(x)=c^{T} x:Ax=b,x\geq 0\}$$
+
+$$\max\{z(x)=c^{\top} x:Ax=b,x\geq 0\}$$
+where
+$$A=\begin{pmatrix}1&1&-3&1&2\\0&1&-2&2&-2\\-2&-1&4&1&0\end{pmatrix}$$
 ```
 A <- rbind(
   c(1,1,-3,1,2),
