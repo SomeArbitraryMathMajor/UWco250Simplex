@@ -1,19 +1,19 @@
 # Note
 This is only for educational purposes, all credits go towards the authors of the book
 
-## Currently Included Content:
+## Currently Included Content
 - Formation of LP of form Ax?b with objective function vector and equality constraints (? can denote =, >=, or <=)
 - Canonical form computation for given LP and proposed basis
 - Simplex computation for given LP
 - Two-phase Simplex computation for given LP
 - Duality transformation for given LP
 
-## Need to add:
+## Need to add
 - complementary slack conditions
 - other algorithms included in the textbook (?)
 
-## Example Usage:
-formulating an LP simple case
+## Example Usage
+formulating an LP simple case:
 
 $$\max\left\\{z(x)=v^{\top} x:Ax=b,x\geq 0 \right\\}$$
 
@@ -45,7 +45,22 @@ b <- c(7,-2,-3)
 v <- c(-1,0,3,7,-1)
 LP <- form.LP(b=b, A=A, v=v)
 ```
-formulating an LP with basis and initial $z$ value
+formulating an LP with basis $B=\\{1,4\\}$ and initial $z$ value of $3$:
+
+\begin{align*}
+    &\text{max}\qquad\begin{pmatrix}-346&732&0&99&0&156&0&96&-44\end{pmatrix}x\\
+    \text{s.t.}\qquad&\\
+    &\begin{pmatrix}
+    19 & -41 & 1 & -5 & 0 & -8 & 0 & -5 & 3\\
+    -25 & 53 & 0 & 8 & 1 & 11 & 0 & 8 & -3\\
+    71 & -151 & 0 & -19 & 0 & -30 & 1 & -21 & 11
+\end{pmatrix}x=\begin{pmatrix}
+    1\\2\\3
+\end{pmatrix}\\
+&\quad x\geq0
+\end{align*}
+
+
 ```
 B <- c(1,4)
 A <- rbind(
