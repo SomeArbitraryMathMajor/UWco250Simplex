@@ -48,3 +48,48 @@ v <- c(-1,3,-5,9,3)
 LP <- form.LP(B, b, A, v)
 simplex(LP)
 ```
+unbounded LP under raw Simplex
+```
+B <- c(2,3,5,6)
+A <- rbind(
+  c(0,-2,2,1,1,1),
+  c(2,-3,3,0,2,4),
+  c(4,-2,4,-2,1,2),
+  c(3,4,-3,-4,-2,-1)
+)
+b <- c(1,9,6,2)
+v <- c(0,7,-8,-2,-4,-6)
+LP <- form.LP(B, b, A, v)
+simplex(LP)
+```
+optimal solution exists under two-phase Simplex
+```
+A <- rbind(
+  c(-1,-2,1),
+  c(1,-1,1)
+)
+b <- c(-1,3)
+v <- c(2,-1,2)
+LP <- form.LP(b=b, A=A, v=v)
+twophase(LP)
+```
+finding dual of given LP simple case
+```
+A <- rbind(
+  c(6,-2,1),
+  c(-1,1,2),
+  c(4,-1,3)
+)
+b <- c(3,3,3)
+v <- c(28,-7,20)
+LP <- form.LP(b=b, A=A, v=v, A.c=rep('<=',3))
+dual(LP)
+```
+finding dual of given LP complex case
+```
+A <- matrix(1:15, ncol=5, nrow=3, byrow=T)
+b <- c(9, 15, 29)
+v <- c(53, 52, 51, 54, 55)
+LP <- form.LP(b=b, A=A, v=v, A.c=c('=','>=','>='), x.c=c('>=0','>=0','<=0','<=0','free'))
+dual(LP, opt=0)
+```
