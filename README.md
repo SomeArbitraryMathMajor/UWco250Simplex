@@ -163,7 +163,7 @@ $$\begin{aligned}
 6 & -2 & 1 \\
 -1 & 1 & 2 \\
 4 & -1 & 3
-\end{pmatrix}x=\begin{pmatrix}
+\end{pmatrix}x\leq\begin{pmatrix}
     3\\
     3\\
     3
@@ -188,15 +188,19 @@ $$\begin{aligned}
     &\text{max}\qquad \begin{pmatrix}53 & 52 & 51 & 54 & 55\end{pmatrix}x\\
     \text{s.t.}\qquad&\\
     &\begin{pmatrix}
-1 & 2 & 3 & 4 & 5 \\
-6 & 7 & 8 & 9 & 10 \\
-11 & 12 & 13 & 14 & 15
-\end{pmatrix}x=\begin{pmatrix}
+    1 & 2 & 3 & 4 & 5 \\
+    6 & 7 & 8 & 9 & 10 \\
+    11 & 12 & 13 & 14 & 15
+\end{pmatrix}x\text{ }\begin{matrix}
+    =\\
+    \geq\\
+    \geq
+\end{matrix}\begin{pmatrix}
     9\\
     15\\
     29
 \end{pmatrix}\\
-&\quad x \geq 0
+&\quad x_1\geq0,x_2\geq0,x_3\leq0,x_4\leq0,x_5\text{ free}
 \end{aligned}$$
 
 ```
