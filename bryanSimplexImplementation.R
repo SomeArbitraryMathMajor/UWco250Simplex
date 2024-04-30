@@ -96,7 +96,7 @@ simplex <- function(LP) {
 ##########################
 # Two-phase Simplex
 ##########################
-phase <- function(LP) {
+twophase <- function(LP) {
   ## returns same output as simplex
   ## phase I
   A <- LP$A
@@ -129,7 +129,7 @@ phase <- function(LP) {
   simplex(canonical(LP))
 }
 
-# phase(LP) # run an instance of two-phase simplex on LP
+# twophase(LP) # run an instance of two-phase simplex on LP
 
 ##########################
 # Duality
