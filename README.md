@@ -97,7 +97,24 @@ v <- c(-1,3,-5,9,3)
 LP <- form.LP(B, b, A, v)
 simplex(LP)
 ```
-unbounded LP under raw Simplex
+unbounded LP under raw Simplex with basis $B=\\{2,3,5,6\\}$:
+
+$$\begin{aligned}
+    &\text{max}\qquad \begin{pmatrix}0 & 7 & -8 & -2 & -4 & -6\end{pmatrix}x\\
+    \text{s.t.}\qquad&\\
+    &\begin{pmatrix}
+0 & -2 & 2 & 1 & 1 & 1 \\
+2 & -3 & 3 & 0 & 2 & 4 \\
+4 & -2 & 4 & -2 & 1 & 2 \\
+3 & 4 & -3 & -4 & -2 & -1
+\end{pmatrix}x=\begin{pmatrix}
+    1\\
+    9\\
+    6\\
+    2
+\end{pmatrix}\\
+&\quad x \geq 0
+\end{aligned}$$
 
 ```
 B <- c(2,3,5,6)
@@ -112,7 +129,21 @@ v <- c(0,7,-8,-2,-4,-6)
 LP <- form.LP(B, b, A, v)
 simplex(LP)
 ```
-optimal solution exists under two-phase Simplex
+optimal solution exists under two-phase Simplex:
+
+$$\begin{aligned}
+    &\text{max}\qquad \begin{pmatrix}2 & -1 & 2\end{pmatrix}x\\
+    \text{s.t.}\qquad&\\
+    &\begin{pmatrix}
+-1 & -2 & 1 \\
+1 & -1 & 1
+\end{pmatrix}x=\begin{pmatrix}
+    -1\\
+    3
+\end{pmatrix}\\
+&\quad x \geq 0
+\end{aligned}$$
+
 ```
 A <- rbind(
   c(-1,-2,1),
@@ -123,7 +154,23 @@ v <- c(2,-1,2)
 LP <- form.LP(b=b, A=A, v=v)
 twophase(LP)
 ```
-finding dual of given LP simple case
+finding dual of given LP simple case:
+
+$$\begin{aligned}
+    &\text{max}\qquad \begin{pmatrix}28 & -7 & 20\end{pmatrix}x\\
+    \text{s.t.}\qquad&\\
+    &\begin{pmatrix}
+6 & -2 & 1 \\
+-1 & 1 & 2 \\
+4 & -1 & 3
+\end{pmatrix}x=\begin{pmatrix}
+    3\\
+    3\\
+    3
+\end{pmatrix}\\
+&\quad x \geq 0
+\end{aligned}$$
+
 ```
 A <- rbind(
   c(6,-2,1),
@@ -136,6 +183,22 @@ LP <- form.LP(b=b, A=A, v=v, A.c=rep('<=',3))
 dual(LP)
 ```
 finding dual of given LP complex case
+
+$$\begin{aligned}
+    &\text{max}\qquad \begin{pmatrix}53 & 52 & 51 & 54 & 55\end{pmatrix}x\\
+    \text{s.t.}\qquad&\\
+    &\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 \\
+6 & 7 & 8 & 9 & 10 \\
+11 & 12 & 13 & 14 & 15
+\end{pmatrix}x=\begin{pmatrix}
+    9\\
+    15\\
+    29
+\end{pmatrix}\\
+&\quad x \geq 0
+\end{aligned}$$
+
 ```
 A <- matrix(1:15, ncol=5, nrow=3, byrow=T)
 b <- c(9, 15, 29)
