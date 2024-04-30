@@ -24,9 +24,15 @@ $$A=\begin{pmatrix}
 0&1&-2&2&-2\\
 -2&-1&4&1&0
 \end{pmatrix},\quad b=\begin{pmatrix}
-7\\ -2\\ -3
+7\\
+-2\\
+-3
 \end{pmatrix},\quad v=\begin{pmatrix}
--1\\ 0 \\3 \\7 \\-1
+-1\\
+0\\
+3\\
+7\\
+-1
 \end{pmatrix}$$
 
 ```
