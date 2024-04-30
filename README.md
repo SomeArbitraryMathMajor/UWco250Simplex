@@ -198,7 +198,7 @@ $$\begin{aligned}
 \end{matrix}\begin{pmatrix}
     9\\
     15\\
-    29
+    29\\
 \end{pmatrix}\\
 &\quad x_1\geq0,x_2\geq0,x_3\leq0,x_4\leq0,x_5\text{ free}
 \end{aligned}$$
