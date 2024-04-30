@@ -157,7 +157,7 @@ twophase(LP)
 finding dual of given LP simple case:
 
 $$\begin{aligned}
-    &\text{max}\qquad \begin{pmatrix}28 & -7 & 20\end{pmatrix}x\\
+    &\max\qquad \begin{pmatrix}28 & -7 & 20\end{pmatrix}x\\
     \text{s.t.}\qquad&\\
     &\begin{pmatrix}
 6 & -2 & 1 \\
@@ -185,7 +185,7 @@ dual(LP)
 finding dual of given LP complex case:
 
 $$\begin{aligned}
-    &\text{max}\qquad \begin{pmatrix}53 & 52 & 51 & 54 & 55\end{pmatrix}x\\
+    &\min\qquad \begin{pmatrix}53 & 52 & 51 & 54 & 55\end{pmatrix}x\\
     \text{s.t.}\qquad&\\
     &\begin{pmatrix}
     1 & 2 & 3 & 4 & 5 \\
