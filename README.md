@@ -19,7 +19,11 @@ $$\max\{z(x)=c^{\top} x:Ax=b,x\geq 0\}$$
 
 where
 
-$$A=\begin{pmatrix}1&1&-3&1&2\\0&1&-2&2&-2\\-2&-1&4&1&0\end{pmatrix}$$
+$$A=\begin{pmatrix}
+1&1&-3&1&2\
+0&1&-2&2&-2\
+-2&-1&4&1&0
+\end{pmatrix}$$
 
 ```
 A <- rbind(
