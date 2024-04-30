@@ -15,7 +15,7 @@ This is only for educational purposes, all credits go towards the authors of the
 ## Example Usage:
 formulating an LP simple case
 
-$$\max\{z(x)=c^{\top} x:Ax=b,x\geq 0\}$$
+$$\max\{z(x)=v^{\top} x:Ax=b,x\geq 0\}$$
 
 where
 
@@ -23,6 +23,10 @@ $$A=\begin{pmatrix}
 1&1&-3&1&2\\
 0&1&-2&2&-2\\
 -2&-1&4&1&0
+\end{pmatrix},\quad b=\begin{pmatrix}
+7\\ -2\\ -3
+\end{pmatrix},\quad v=\begin{pmatrix}
+-1\\ 0 \\3 \\7 \\-1
 \end{pmatrix}$$
 
 ```
