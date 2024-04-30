@@ -47,7 +47,7 @@ LP <- form.LP(b=b, A=A, v=v)
 ```
 formulating an LP with basis $B=\\{1,4\\}$ and initial $z$ value of $3$:
 
-\begin{align*}
+$$\begin{aligned}
     &\text{max}\qquad\begin{pmatrix}-346&732&0&99&0&156&0&96&-44\end{pmatrix}x\\
     \text{s.t.}\qquad&\\
     &\begin{pmatrix}
@@ -58,7 +58,7 @@ formulating an LP with basis $B=\\{1,4\\}$ and initial $z$ value of $3$:
     1\\2\\3
 \end{pmatrix}\\
 &\quad x\geq0
-\end{align*}
+\end{aligned}$$
 
 
 ```
