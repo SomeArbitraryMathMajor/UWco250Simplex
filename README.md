@@ -35,7 +35,7 @@ $$A=\begin{pmatrix}
 -1
 \end{pmatrix}$$
 
-```
+```R
 A <- rbind(
   c(1,1,-3,1,2),
   c(0,1,-2,2,-2),
@@ -60,7 +60,7 @@ $$\begin{aligned}
 &\quad x \geq 0
 \end{aligned}$$
 
-```
+```R
 B <- c(1,4)
 A <- rbind(
   c(1,-2,1,0,2),
@@ -86,7 +86,7 @@ $$\begin{aligned}
 &\quad x \geq 0
 \end{aligned}$$
 
-```
+```R
 B <- c(3,5)
 A <- rbind(
   c(4,1,3,-1,-2),
@@ -116,7 +116,7 @@ $$\begin{aligned}
 &\quad x \geq 0
 \end{aligned}$$
 
-```
+```R
 B <- c(2,3,5,6)
 A <- rbind(
   c(0,-2,2,1,1,1),
@@ -144,7 +144,7 @@ $$\begin{aligned}
 &\quad x \geq 0
 \end{aligned}$$
 
-```
+```R
 A <- rbind(
   c(-1,-2,1),
   c(1,-1,1)
@@ -171,7 +171,7 @@ $$\begin{aligned}
 &\quad x \geq 0
 \end{aligned}$$
 
-```
+```R
 A <- rbind(
   c(6,-2,1),
   c(-1,1,2),
@@ -204,7 +204,7 @@ $$\begin{aligned}
 &\quad x_1\geq0,x_2\geq0,x_3\leq0,x_4\leq0,x_5\text{ free}
 \end{aligned}$$
 
-```
+```R
 A <- matrix(1:15, ncol=5, nrow=3, byrow=T)
 b <- c(9, 15, 29)
 v <- c(53, 52, 51, 54, 55)
