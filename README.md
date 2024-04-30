@@ -8,7 +8,7 @@ This is only for educational purposes, all credits go towards the authors of the
 - Two-phase Simplex computation for given LP
 - Duality transformation for given LP
 
-## Need to add
+## To be added
 - complementary slack conditions
 - other algorithms included in the textbook (?)
 
