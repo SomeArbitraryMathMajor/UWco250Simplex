@@ -71,7 +71,7 @@ v <- c(0,-1,-2,0,-3)
 z <- 3
 LP <- form.LP(B, b, A, v, z)
 ```
-optimal solution exists for raw Simplex with given basis $B=\\{\3,5\}$:
+optimal solution exists for raw Simplex with given basis $B=\\{3,5\\}$:
 
 $$\begin{aligned}
     &\text{max}\qquad \begin{pmatrix}-1 & 3 & -5 & 9 & 3\end{pmatrix}x\\
