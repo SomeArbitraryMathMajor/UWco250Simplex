@@ -15,7 +15,7 @@ This is only for educational purposes, all credits go towards the authors of the
 ## Example Usage:
 formulating an LP simple case
 
-$$\max \{z(x)=v^{\top} x:Ax=b,x\geq 0 \}$$
+$$\max {\{z(x)=v^{\top} x:Ax=b,x\geq 0 \}}$$
 
 where
 
