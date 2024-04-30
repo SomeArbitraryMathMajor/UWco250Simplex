@@ -2,7 +2,7 @@
 This is only for educational purposes, all credits go towards the authors of the book
 
 ## Currently Included Content
-- Formation of LP of form Ax?b with objective function vector and equality constraints (? can denote $=$, $\geq$, or $\leq$)
+- Formation of LP of form $Ax?b$ with objective function vector and equality constraints (? can denote $=$, $\geq$, or $\leq$)
 - Canonical form computation for given LP and proposed basis
 - Simplex computation for given LP
 - Two-phase Simplex computation for given LP
