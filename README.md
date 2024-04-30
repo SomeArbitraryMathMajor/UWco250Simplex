@@ -48,7 +48,7 @@ LP <- form.LP(b=b, A=A, v=v)
 formulating an LP with basis $B=\\{1,4\\}$ and initial $z$ value of $3$:
 
 $$\begin{aligned}
-    &\text{max}\qquad 3 + \begin{pmatrix}0 & -1 & -2 & 0 & -3\end{pmatrix}x\\
+    &\max\qquad 3 + \begin{pmatrix}0 & -1 & -2 & 0 & -3\end{pmatrix}x\\
     \text{s.t.}\qquad&\\
     &\begin{pmatrix}
     1 & -2 & 1 & 0 & 2\\
@@ -74,7 +74,7 @@ LP <- form.LP(B, b, A, v, z)
 optimal solution exists for raw Simplex with given basis $B=\\{3,5\\}$:
 
 $$\begin{aligned}
-    &\text{max}\qquad \begin{pmatrix}-1 & 3 & -5 & 9 & 3\end{pmatrix}x\\
+    &\max\qquad \begin{pmatrix}-1 & 3 & -5 & 9 & 3\end{pmatrix}x\\
     \text{s.t.}\qquad&\\
     &\begin{pmatrix}
     4 & 1& 3 & -1 & -2\\
@@ -100,7 +100,7 @@ simplex(LP)
 unbounded LP under raw Simplex with basis $B=\\{2,3,5,6\\}$:
 
 $$\begin{aligned}
-    &\text{max}\qquad \begin{pmatrix}0 & 7 & -8 & -2 & -4 & -6\end{pmatrix}x\\
+    &\max\qquad \begin{pmatrix}0 & 7 & -8 & -2 & -4 & -6\end{pmatrix}x\\
     \text{s.t.}\qquad&\\
     &\begin{pmatrix}
 0 & -2 & 2 & 1 & 1 & 1 \\
@@ -132,7 +132,7 @@ simplex(LP)
 optimal solution exists under two-phase Simplex:
 
 $$\begin{aligned}
-    &\text{max}\qquad \begin{pmatrix}2 & -1 & 2\end{pmatrix}x\\
+    &\max\qquad \begin{pmatrix}2 & -1 & 2\end{pmatrix}x\\
     \text{s.t.}\qquad&\\
     &\begin{pmatrix}
 -1 & -2 & 1 \\
