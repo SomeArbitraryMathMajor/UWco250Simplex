@@ -182,7 +182,7 @@ v <- c(28,-7,20)
 LP <- form.LP(b=b, A=A, v=v, A.c=rep('<=',3))
 dual(LP)
 ```
-finding dual of given LP complex case
+finding dual of given LP complex case:
 
 $$\begin{aligned}
     &\text{max}\qquad \begin{pmatrix}53 & 52 & 51 & 54 & 55\end{pmatrix}x\\
